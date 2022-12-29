@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap');
+body{
+    margin: 0;
+    font-family: 'Rajdhani', sans-serif;
+}
+@keyframes scroll {
+    100%{
+     background-position:-3000px 0px;
+   }
+ }
+.bg-img{
+    background: url(../Images/bg-2-scaled.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 50px 0;
+    animation:scroll 70s linear infinite;
+}
+img.quote {
+    margin: 10px 10px 0;
+}
+.droneHead{
+    color: white;
+    max-width: 1460px;
+    width: calc(100% - 72%);
+    margin-left: 109px;
+}
+.clientFeedback {
+    margin: 0 0 1px;
+    font-size: 22px;
+    padding-left: 34px;
+    position: relative;
+}
+.clientFeedback::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 3px;
+    width: 25px;
+    height: 4px;
+    background: #d72323;
+}
+.clientSays{
+    text-transform: capitalize;
+    margin: 0;
+    font-size: 47px;
+}
+.container{
+    max-width: 1460px;
+    width: calc(100% - 135px);
+    display: flex;
+    align-items: center;
+    padding: 0 0 40px;
+    margin-right: auto;
+}
+.droneImg {
+    margin-left: -23px;
+}
+.droneContent {
+    margin-left: 27px;
+}
+.droneImg img{
+    animation: shakeY;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+.droneUpper{
+    background: white;
+    display: flex;
+    align-items: center;
+    width: 448px;
+    height: 241px;
+}
+.upperContent{
+    padding: 0 27px;
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+    font-weight: 600;
+    color: #404040;
+    max-height: 129px;
+    overflow: auto;
+}
+.droneInner{
+    position: relative;
+    padding: 50px 10px 36px;
+}
+.droneInner::before {
+    content: "";
+    position: absolute;
+    background: url(../Images/quotation-mark.png) no-repeat;
+    top: 12px;
+    left: 18px;
+    width: 32px;
+    height: 32px;
+}
+.droneLower{
+    background: #d72323;
+    position: relative;
+    text-align: center;
+}
+.profilePhoto{
+    width: 90px;
+    height: 90px;
+    border: 4px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin-top: -45px;
+}
+.profilePhoto img{
+    width: 100%;
+}
+.name{
+    margin-bottom: 0;
+    color: white;
+}
+.designation{
+    color: white;
+}
+.leftMove{
+    float: left;
+}
+.rightMove{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+.slideCount{
+    color: white;
+    margin-top: 5px;
+    margin-bottom: -24px;
+}
+.scrollbar {
+    display: inline-block;
+    position: relative;
+    padding: 14px 0 22px;
+}
+.anchor1{
+    background: white;
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    left: -86px;
+}
+.anchor2{
+    background: white;
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    left: -36px;
+}
+.anchor3{
+    background: white;
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    left: 14px;
+}
+.anchor4 {
+    background: white;
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    left: 64px;
+}
+.active{
+    background: black;
+    width: 50px;
+    height: 2px;
+}
+@media only screen and (max-width:1024px){
+    .container{
+        width: calc(100% - 92px);
+    }
+    .droneHead{
+        width: calc(100% - 64%);
+    }
+    .droneImg img{
+        width: 467px;
+    }
+}
+@media only screen and (max-width:768px){
+    .bg-img{
+        animation: scroll 10s linear infinite;
+    }
+    .droneHead {
+        width: calc(100% - 10%);
+        margin-bottom: 70px;
+        margin-left: 51px;
+    }
+    .container {
+        width: calc(100% - 118px);
+        margin-left: auto;
+        flex-direction: column;
+    }
+    .droneImg {
+        margin-left: 0;
+        margin-bottom: 29px;
+    }
+    .droneImg img {
+        width: auto;
+    }
+    .droneContent {
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width:414px){
+    .droneHead{
+        margin-left: 12px;
+    }
+    .droneUpper{
+        width: 354px;
+    }
+    .upperContent{
+        max-height: 105px;
+    }
+    .clientFeedback::before{
+        display: none;
+    }
+    .clientFeedback{
+        padding-left: 0;
+    }
+    .clientSays{
+        font-size: 27px;
+    }
+    .container{
+        width: calc(100% - 40px);
+    }
+    .droneImg img {
+        width: 415px;
+    }
+}
+@media only screen and (max-width:768px){
+    .droneImg img {
+        width: 350px;
+    }
+}
